@@ -8,7 +8,7 @@ class MenadzerPolaczen:
   def read_data(self):
     calls_dict_sum = dict()
     with open(self.filename, 'r') as fin:
-      reader = csv.reader(fin, delimiter= ",")
+      reader = csv.reader(fin, delimiter=",")
       headers = next(reader)
 
       for row in reader:
