@@ -3,7 +3,7 @@ calls_sum_dict = dict()
 def Polaczenia(self):
     with open('phoneCalls.csv', 'r') as fin:
         # csv.DictReader uses first line in file for column headings by default
-        reader = csv.reader(fin, delimiter=";")  # comma is default delimiter
+        reader = csv.reader(fin, delimiter=",")  # comma is default delimiter
         headers = next(reader)
         for row in reader:
             from_subscr = int(row[0])
